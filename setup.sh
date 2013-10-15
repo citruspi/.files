@@ -1,3 +1,6 @@
+rm -rf ~/.vim
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
 rm -f ~/.vimrc
 rm -f ~/.bashrc
 rm -f ~/.gitconfig
