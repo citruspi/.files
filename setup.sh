@@ -12,3 +12,5 @@ ln -s ~/.files/.bashrc ~/.bashrc
 ln -s ~/.files/.gitconfig ~/.gitconfig
 ln -s ~/.files/.zlogin ~/.zlogin
 ln -s ~/.files/.tmux.conf ~/.tmux.conf
+
+vim +BundleInstall
