@@ -1,6 +1,9 @@
 rm -rf ~/.vim
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
+mkdir ~/.vim/colors
+wget -O ~/.vim/colors/Tomorrow-Night-Eighties.vim https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night-Eighties.vim
+
 rm -f ~/.vimrc
 rm -f ~/.bashrc
 rm -f ~/.gitconfig
