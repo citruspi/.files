@@ -1,4 +1,8 @@
-if [ "$TMUX" = "" ]; then tmux; fi
+if tmux has-session -t "ssh"; then
+    tmux attach-session -t "ssh"
+else
+    tmux new-session -s "ssh"
+fi
 
 clear;
 
