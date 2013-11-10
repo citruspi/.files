@@ -9,6 +9,7 @@ Bundle 'gmarik/vundle'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'kien/ctrlp.vim.git'
 Bundle 'bling/vim-airline'
+Bundle 'tpope/vim-fugitive'
 
 let mapleader=','
 
