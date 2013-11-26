@@ -19,3 +19,5 @@ ln -s ~/.files/.zlogin ~/.zlogin
 ln -s ~/.files/.tmux.conf ~/.tmux.conf
 
 vim +BundleInstall
+
+source ~/.zshrc
