@@ -9,6 +9,8 @@ fi
 
 #Virtualenv Wrapper
 export WORKON_HOME=$HOME/.virtualenvs
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
 
 if [[ $platform == 'linux' ]]; then
     source /usr/bin/virtualenvwrapper.sh
