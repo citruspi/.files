@@ -48,8 +48,8 @@ set noerrorbells
 set nobackup
 set noswapfile
 set ruler 
-set list
-set listchars=tab:▸\ ,eol:¬,trail:⋅,nbsp:␣,extends:❯,precedes:❮
+"set list
+"set listchars=tab:▸\ ,eol:¬,trail:⋅,nbsp:␣,extends:❯,precedes:❮
 "set rnu
 set laststatus=2
 set ffs=unix,mac,dos
@@ -111,11 +111,11 @@ let g:airline#extensions#whitespace#mixed_indent_format = 'mixed-indent[%s]'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#branch#empty_message = ''
 
-#set statusline=%<%f\                     " Filename
-#set statusline+=%w%h%m%r                 " Options\
-#set statusline+=\ [%{&ff}/%Y]            " Filetype
-#set statusline+=\ [%{getcwd()}]          " Current dir
-#set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
+"set statusline=%<%f\                     " Filename
+"set statusline+=%w%h%m%r                 " Options\
+"set statusline+=\ [%{&ff}/%Y]            " Filetype
+"set statusline+=\ [%{getcwd()}]          " Current dir
+"set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
 
 "set statusline=
 "set statusline+=%7*\[%n]                                  "buffernr
