@@ -11,16 +11,16 @@ rm -f ~/.gitconfig
 rm -f ~/.zlogin
 rm -f ~/.tmux.conf
 
-ln -s ~/.files/.zshrc ~/.zshrc
-ln -s ~/.files/.vimrc ~/.vimrc
-ln -s ~/.files/.bashrc ~/.bashrc
-ln -s ~/.files/.gitconfig ~/.gitconfig
-ln -s ~/.files/.zlogin ~/.zlogin
-ln -s ~/.files/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.bashrc ~/.bashrc
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/.zlogin ~/.zlogin
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 vim +BundleInstall
 
 source ~/.zshrc
 tmux source-file ~/.tmux.conf
 
-(cd ~/.files && git remote set-url origin git@github.com:citruspi/.files.git)
+(cd ~/dotfiles && git remote set-url origin git@github.com:citruspi/dotfiles.git)
