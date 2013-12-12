@@ -22,3 +22,9 @@
     changed = magenta
     untracked = bold yellow
 
+[core]
+    editor = vim
+    autocrlf = input
+    safecrlf = warn
+    excludesfile = ~/.gitignore
+    quotepath = false
