@@ -17,3 +17,9 @@ if [[ $platform == 'linux' ]]; then
 elif [[ $platform == 'osx' ]]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
+
+# Customize the prompt
+
+PROMPT="[%n@%m:%/] > "
+
+RPROMPT="[%T]"
