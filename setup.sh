@@ -21,5 +21,6 @@ ln -s ~/.files/.tmux.conf ~/.tmux.conf
 vim +BundleInstall
 
 source ~/.zshrc
+tmux source-file ~/.tmux.conf
 
 (cd ~/.files && git remote set-url origin git@github.com:citruspi/.files.git)
