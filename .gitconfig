@@ -28,3 +28,10 @@
     safecrlf = warn
     excludesfile = ~/.gitignore
     quotepath = false
+
+[diff]
+    tool = vimdiff
+
+[merge]
+    log = true
+    tool = vimdiff
