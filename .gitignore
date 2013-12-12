@@ -1,0 +1,12 @@
+# Python
+
+*.pyc
+
+# Java
+
+*.class
+
+# OS X
+
+.DS_Store
+.Trashes
