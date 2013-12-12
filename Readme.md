@@ -18,4 +18,4 @@ Don't run the following commands on your computer without going through the dotf
 
 ### Update
 
-	cd ~/dotfiles && git pull origin master
+	cd ~/dotfiles && git pull origin master && ./setup.sh
