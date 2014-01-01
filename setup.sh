@@ -20,6 +20,12 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 vim +BundleInstall
 
+mkdir ~/.vim/syntax
+
+ln -s ~/dotfiles/filetype.vim ~/.vim/filetype.vim
+
+wget -O ~/.vim/syntax/nginx.vim 'http://www.vim.org/scripts/download_script.php?src_id=19394'
+
 source ~/.zshrc
 tmux source-file ~/.tmux.conf
 
