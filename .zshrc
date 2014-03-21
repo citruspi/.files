@@ -76,6 +76,8 @@ elif [[ $platform == 'osx' ]]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
 
+export GOPATH=$HOME/go
+
 export TERM=xterm-256color
 export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
