@@ -14,7 +14,7 @@ fi
 # ------------------------------
 
 alias ..='cd ../'
-alias 'bk=cd $OLDPWD'
+alias 'back=cd $OLDPWD'
 
 if [[ $platform == 'linux' ]]; then
     alias ls='ls -GFh --color'
