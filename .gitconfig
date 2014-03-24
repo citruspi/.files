@@ -21,7 +21,8 @@
     added = green
     changed = magenta
     untracked = bold yellow
-
+    ignored = yellow
+    
 [core]
     editor = vim
     autocrlf = input
@@ -37,6 +38,7 @@
     tool = vimdiff
 
 [alias]
+    stat = status --ignored
     branches = branch -a
     remotes = remote -v
     tags = tag -l
