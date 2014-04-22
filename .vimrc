@@ -13,7 +13,6 @@ Bundle 'kien/ctrlp.vim.git'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'plasticboy/vim-markdown'
-Bundle 'wakatime/vim-wakatime'
 
 let mapleader=','
 
