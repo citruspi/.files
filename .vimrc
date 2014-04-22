@@ -70,7 +70,7 @@ set formatoptions+=n
 set formatoptions+=l
 
 if &t_Co >= 256 || has("gui_running")
-   colorscheme Tomorrow-Night-Eighties
+   "colorscheme Tomorrow-Night-Eighties
 endif
 
 if &t_Co > 2 || has("gui_running")
