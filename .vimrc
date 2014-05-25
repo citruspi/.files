@@ -14,8 +14,15 @@ Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'plasticboy/vim-markdown'
 Bundle "ekalinin/Dockerfile.vim"
+Bundle "scrooloose/nerdtree"
 
 let mapleader=','
+
+let NERDTreeIgnore = ['\.pyc$']
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+imap <Space-Tab> <C-P>
 
 set noshowmode
 set showcmd
