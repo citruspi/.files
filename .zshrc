@@ -138,7 +138,7 @@ function loc() {
     echo "${fg[blue]}Total${reset_color} lines of code: ${fg[green]}$total${reset_color}"
 }
 
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$GOPATH/bin
 
 path() {
     echo $PATH | tr ":" "\n" | \
