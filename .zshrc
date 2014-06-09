@@ -10,6 +10,23 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
 fi
 
 # ------------------------------
+# Go Stuff
+# ------------------------------
+
+if [[ $platform == 'osx' ]]; then
+    export GOROOT=/usr/local/go
+    export GOPATH=$HOME/go
+
+    if [ -f "/usr/local/bin/go-virtualenv.sh" ]; then
+        source /usr/local/bin/go-virtualenv.sh
+
+        alias genv='go-mkvirtualenv'
+        alias gon='go-workon'
+        alias goff='go-deactivate'
+    fi
+fi
+
+# ------------------------------
 # Aliases
 # ------------------------------
 
@@ -75,8 +92,6 @@ if [[ $platform == 'linux' ]]; then
 elif [[ $platform == 'osx' ]]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
-
-export GOPATH=$HOME/go
 
 export TERM=xterm-256color
 export CLICOLOR=1
