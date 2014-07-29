@@ -16,6 +16,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle "ekalinin/Dockerfile.vim"
 Bundle "scrooloose/nerdtree"
 Bundle "jnwhiteh/vim-golang"
+Bundle 'mustache/vim-mustache-handlebars'
 
 let mapleader=','
 
