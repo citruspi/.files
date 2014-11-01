@@ -15,7 +15,7 @@ fi
 
 if [[ $platform == 'osx' ]]; then
     export GOROOT=/usr/local/go
-    export GOPATH=$HOME/go
+    export GOPATH=$HOME/.go
 
     if [ -f "/usr/local/bin/go-virtualenv.sh" ]; then
         source /usr/local/bin/go-virtualenv.sh
