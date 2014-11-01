@@ -13,6 +13,7 @@ rm -f ~/.zshrc
 rm -f ~/.vimrc
 rm -f ~/.bashrc
 rm -f ~/.gitconfig
+rm -f ~/.gitignore
 rm -f ~/.zlogin
 rm -f ~/.tmux.conf
 
