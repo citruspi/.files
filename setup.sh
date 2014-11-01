@@ -1,5 +1,6 @@
 cd ~
 git clone https://github.com/citruspi/.files.git /tmp/dotfiles
+rm -rf ~/.files
 mv /tmp/dotfiles/.files ~/.files
 rm -rf /tmp/dotfiles
 
