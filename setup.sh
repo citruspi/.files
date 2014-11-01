@@ -1,3 +1,8 @@
+cd ~
+git clone https://github.com/citruspi/dotfiles.git /tmp/dotfiles
+mv /tmp/dotfiles/.files ~/.files
+rm -rf /tmp/dotfiles
+
 rm -rf ~/.vim
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
@@ -11,23 +16,21 @@ rm -f ~/.gitconfig
 rm -f ~/.zlogin
 rm -f ~/.tmux.conf
 
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.bashrc ~/.bashrc
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/dotfiles/.gitignore ~/.gitignore
-ln -s ~/dotfiles/.zlogin ~/.zlogin
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/.files/.zshrc ~/.zshrc
+ln -s ~/.files/.vimrc ~/.vimrc
+ln -s ~/.files/.bashrc ~/.bashrc
+ln -s ~/.files/.gitconfig ~/.gitconfig
+ln -s ~/.files/.gitignore ~/.gitignore
+ln -s ~/.files/.zlogin ~/.zlogin
+ln -s ~/.files/.tmux.conf ~/.tmux.conf
 
 vim +BundleInstall
 
 mkdir ~/.vim/syntax
 
-ln -s ~/dotfiles/filetype.vim ~/.vim/filetype.vim
+ln -s ~/.files/filetype.vim ~/.vim/filetype.vim
 
 wget -O ~/.vim/syntax/nginx.vim 'http://www.vim.org/scripts/download_script.php?src_id=19394'
 
 source ~/.zshrc
 tmux source-file ~/.tmux.conf
-
-(cd ~/dotfiles && git remote set-url origin git@github.com:citruspi/dotfiles.git)
