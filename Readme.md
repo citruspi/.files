@@ -12,10 +12,14 @@ My personal dotfiles for
 
 Don't run the following commands on your computer without going through the dotfiles and the setup script. __Your files are not backed up - they are deleted.__
 
-### Install
+### Proper
 
-    cd ~ && git clone git://github.com/citruspi/dotfiles.git ~/dotfiles && ~/dotfiles/setup.sh
+    cd tmp
+    wget https://raw.githubusercontent.com/citruspi/.files/master/setup.sh
+    vim setup.sh
+    bash setup.sh
+    cd ~
 
-### Update
+### One Liner
 
-	cd ~/dotfiles && git pull origin master && ./setup.sh
+    cd tmp; wget https://raw.githubusercontent.com/citruspi/.files/master/setup.sh; bash setup.sh; cd ~;
