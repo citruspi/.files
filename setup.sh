@@ -19,7 +19,7 @@ rm -f ~/.zlogin
 rm -f ~/.tmux.conf
 
 ln -s ~/.files/.zshrc ~/.zshrc
-ln -s ~/.files/.vimrc ~/.vimrc
+ln -s ~/.files/vim/.vimrc ~/.vimrc
 ln -s ~/.files/.bashrc ~/.bashrc
 ln -s ~/.files/.gitconfig ~/.gitconfig
 ln -s ~/.files/.gitignore ~/.gitignore
@@ -30,7 +30,7 @@ vim +BundleInstall
 
 mkdir ~/.vim/syntax
 
-ln -s ~/.files/filetype.vim ~/.vim/filetype.vim
+ln -s ~/.files/vim/filetype.vim ~/.vim/filetype.vim
 
 wget -O ~/.vim/syntax/nginx.vim 'http://www.vim.org/scripts/download_script.php?src_id=19394'
 
