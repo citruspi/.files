@@ -24,6 +24,9 @@ if [[ $platform == 'osx' ]]; then
         alias gon='go-workon'
         alias goff='go-deactivate'
     fi
+elif [[ $platform == 'linux' ]]; then
+    export GOROOT=/usr/lib/golang
+    export GOPATH=$HOME/.go
 fi
 
 # ------------------------------
