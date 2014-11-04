@@ -49,8 +49,6 @@ set smarttab
 set expandtab
 set hlsearch
 set incsearch
-set history=1000000
-set undolevels=100000
 set wildignore="*.swp,*.bak,*.pyc,*.class"
 set title
 set visualbell
