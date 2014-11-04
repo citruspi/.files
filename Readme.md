@@ -19,8 +19,8 @@ Don't run the following commands on your computer without going through the dotf
     wget https://raw.githubusercontent.com/citruspi/.files/master/setup.sh
     vim setup.sh
     bash setup.sh
-    cd ~
+    cd $OLDPWD
 
 ### One Liner
 
-    cd /tmp; wget https://raw.githubusercontent.com/citruspi/.files/master/setup.sh; bash setup.sh; cd ~;
+    cd /tmp; wget https://raw.githubusercontent.com/citruspi/.files/master/setup.sh; bash setup.sh; cd $OLDPWD;
