@@ -21,6 +21,7 @@ Bundle 'fatih/vim-go'
 
 let mapleader=','
 
+let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$']
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
