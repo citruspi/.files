@@ -114,6 +114,13 @@ export LANG=en_US.UTF-8
 # Functions 
 # ------------------------------
 
+refresh() {
+    cd /tmp;
+    wget https://raw.githubusercontent.com/citruspi/.files/master/setup.sh;
+    bash setup.sh
+    cd $OLDPWD;
+}
+
 ex() {
     if [[ -f $1 ]]; then
         case $1 in
