@@ -14,7 +14,7 @@ fi
 # ------------------------------
 
 if [[ $platform == 'osx' ]]; then
-    export GOROOT=$(brew --prefix)/Cellar/go/$(brew list go | head -n 1 | cut -d '/' -f 6)
+    export GOROOT=$(brew --prefix)/Cellar/go/$(brew list go | head -n 1 | cut -d '/' -f 6)/libexec
     export GOPATH=$HOME/.go
 
     if [ -f "/usr/local/bin/go-virtualenv.sh" ]; then
