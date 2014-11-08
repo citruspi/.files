@@ -18,6 +18,7 @@ Bundle "scrooloose/nerdtree"
 Bundle "jnwhiteh/vim-golang"
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'fatih/vim-go'
+Bundle 'wting/rust.vim'
 
 let mapleader=','
 
