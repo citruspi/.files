@@ -30,3 +30,9 @@ set colorcolumn=+1		" Color the column after 80 characters
 
 set number			" Enable line numbers on the left
 set numberwidth=5		" Add a buffer between the number and the edge
+
+set tabstop=4			" Tabs are equal to 4 columns
+set expandtab			" Expand the tab character into spaces
+set shiftwidth=4		" Reindent operations should use 4 columns
+set shiftround			" 3 -> 5; !(3 -> 7)
+
