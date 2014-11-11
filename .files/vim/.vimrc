@@ -13,6 +13,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Bundle "scrooloose/nerdtree"
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -74,3 +75,5 @@ autocmd vimenter * if !argc() | NERDTree | endif " If there aren't any arguments
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " If NERDTree is the only buffer open, close vim
 let NERDTreeShowHidden=1            " Show hidden (starts with '.') files
 let NERDTreeIgnore = ['\.pyc$']     " Ignore .pyc files
+
+let g:ctrlp_show_hidden = 1
