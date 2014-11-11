@@ -7,6 +7,7 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
 
 call vundle#end() 
 filetype plugin indent on
@@ -37,3 +38,6 @@ set expandtab			        " Expand the tab character into spaces
 set shiftwidth=4		        " Reindent operations should use 4 columns
 set shiftround			        " 3 -> 5; !(3 -> 7)
 
+set laststatus=2
+
+let g:airline_theme = 'solarized'
