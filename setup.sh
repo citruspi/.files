@@ -18,7 +18,7 @@ rm -f ~/.gitignore
 rm -f ~/.zlogin
 rm -f ~/.tmux.conf
 
-ln -s ~/.files/.zshrc ~/.zshrc
+ln -s ~/.files/zsh/.zshrc ~/.zshrc
 ln -s ~/.files/vim/.vimrc ~/.vimrc
 ln -s ~/.files/.bashrc ~/.bashrc
 ln -s ~/.files/.gitconfig ~/.gitconfig
