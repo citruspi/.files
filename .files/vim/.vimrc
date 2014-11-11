@@ -10,3 +10,4 @@ call vundle#end()
 filetype plugin indent on
 
 let mapleader=","
+nnoremap ; :			" Remap ':' to ';'
