@@ -42,6 +42,11 @@ set expandtab                   " Expand the tab character into spaces
 set shiftwidth=4                " Reindent operations should use 4 columns
 set shiftround                  " 3 -> 5; !(3 -> 7)
 
+set hlsearch                    " If there was a previous patter, highlight the matches
+set incsearch                   " Jump to the first match as the query is typed in
+set ignorecase                  " Make the search case-insensitive
+set smartcase                   " If the search includes a capital letter, make it case-sensitive
+
 set list listchars=tab:»·,trail:·,eol:¶
 
 set laststatus=2
