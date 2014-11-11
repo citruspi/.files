@@ -19,3 +19,6 @@ set noswapfile
 
 set ruler			" Report the cursor position on the bottom right
 set cursorline			" Highlight the line the cursor is currently on
+
+set textwidth=80		" Set the text width to 80 characters
+set colorcolumn=+1		" Color the column after 80 characters
