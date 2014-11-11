@@ -11,3 +11,7 @@ filetype plugin indent on
 
 let mapleader=","
 nnoremap ; :			" Remap ':' to ';'
+
+set nobackup
+set nowritebackup
+set noswapfile
