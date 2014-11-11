@@ -5,9 +5,14 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 
 Plugin 'gmarik/vundle'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end() 
 filetype plugin indent on
+syntax on
+
+set background=dark
+colorscheme solarized
 
 let mapleader=","
 nnoremap ; :			" Remap ':' to ';'
