@@ -48,6 +48,9 @@ set incsearch                   " Jump to the first match as the query is typed 
 set ignorecase                  " Make the search case-insensitive
 set smartcase                   " If the search includes a capital letter, make it case-sensitive
 
+set splitbelow                  " Split new panes to the right and bottom
+set splitright
+
                                     " Force myself to use the hjkl keys
 nnoremap <Left> :echoe "h"<CR>
 nnoremap <Right> :echoe "l"<CR>
