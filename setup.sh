@@ -26,7 +26,7 @@ ln -s ~/.files/.gitignore ~/.gitignore
 ln -s ~/.files/.zlogin ~/.zlogin
 ln -s ~/.files/.tmux.conf ~/.tmux.conf
 
-vim +BundleInstall
+vim +BundleInstall +qall
 
 mkdir ~/.vim/syntax
 
