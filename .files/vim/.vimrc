@@ -47,6 +47,12 @@ set incsearch                   " Jump to the first match as the query is typed 
 set ignorecase                  " Make the search case-insensitive
 set smartcase                   " If the search includes a capital letter, make it case-sensitive
 
+                                    " Force myself to use the hjkl keys
+nnoremap <Left> :echoe "h"<CR>
+nnoremap <Right> :echoe "l"<CR>
+nnoremap <Up> :echoe "k"<CR>
+nnoremap <Down> :echoe "j"<CR>
+
 set list listchars=tab:»·,trail:·,eol:¶
 
 set laststatus=2
