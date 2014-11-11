@@ -63,10 +63,6 @@ nnoremap <Left> :echoe "h"<CR>
 nnoremap <Right> :echoe "l"<CR>
 nnoremap <Up> :echoe "k"<CR>
 nnoremap <Down> :echoe "j"<CR>
-inoremap <Left> <nop>
-inoremap <Right> <nop>
-inoremap <Up> <nop>
-inoremap <Down> <nop>
 
 set list listchars=tab:»·,trail:·,eol:¶
 
