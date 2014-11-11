@@ -15,3 +15,5 @@ nnoremap ; :			" Remap ':' to ';'
 set nobackup
 set nowritebackup
 set noswapfile
+
+set ruler			" Report the cursor position on the bottom right
