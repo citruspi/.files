@@ -78,3 +78,5 @@ let NERDTreeShowHidden=1            " Show hidden (starts with '.') files
 let NERDTreeIgnore = ['\.pyc$']     " Ignore .pyc files
 
 let g:ctrlp_show_hidden = 1
+
+highlight clear SignColumn          " Make the GitGutter sign column clear
