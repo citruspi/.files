@@ -51,6 +51,8 @@ set smartcase                   " If the search includes a capital letter, make 
 set splitbelow                  " Split new panes to the right and bottom
 set splitright
 
+set scrolloff=5                 " Start scrolling when five rows above the end
+set scrolljump=0
                                     " Force myself to use the hjkl keys
 nnoremap <Left> :echoe "h"<CR>
 nnoremap <Right> :echoe "l"<CR>
