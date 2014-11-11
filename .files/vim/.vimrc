@@ -22,3 +22,6 @@ set cursorline			" Highlight the line the cursor is currently on
 
 set textwidth=80		" Set the text width to 80 characters
 set colorcolumn=+1		" Color the column after 80 characters
+
+set number			" Enable line numbers on the left
+set numberwidth=5		" Add a buffer between the number and the edge
