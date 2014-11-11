@@ -8,3 +8,5 @@ Plugin 'gmarik/vundle'
 
 call vundle#end() 
 filetype plugin indent on
+
+let mapleader=","
