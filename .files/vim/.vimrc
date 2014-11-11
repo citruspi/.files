@@ -17,3 +17,4 @@ set nowritebackup
 set noswapfile
 
 set ruler			" Report the cursor position on the bottom right
+set cursorline			" Highlight the line the cursor is currently on
