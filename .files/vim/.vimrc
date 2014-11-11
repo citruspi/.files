@@ -18,7 +18,7 @@ set background=dark
 colorscheme solarized
 
 let mapleader=","
-nnoremap ; :			        " Remap ':' to ';'
+nnoremap ; :
 set showcmd
 
 set nobackup
