@@ -42,6 +42,8 @@ set expandtab			        " Expand the tab character into spaces
 set shiftwidth=4		        " Reindent operations should use 4 columns
 set shiftround			        " 3 -> 5; !(3 -> 7)
 
+set list listchars=tab:»·,trail:·,eol:¶
+
 set laststatus=2
 
 let g:airline_theme = 'solarized'
