@@ -12,6 +12,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Bundle "scrooloose/nerdtree"
 
 call vundle#end()
 filetype plugin indent on
@@ -58,3 +59,8 @@ set list listchars=tab:»·,trail:·,eol:¶
 set laststatus=2
 
 let g:airline_theme = 'solarized'
+
+autocmd vimenter * if !argc() | NERDTree | endif " If there aren't any arguments automatically open NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " If NERDTree is the only buffer open, close vim
+let NERDTreeShowHidden=1            " Show hidden (starts with '.') files
+let NERDTreeIgnore = ['\.pyc$']     " Ignore .pyc files
