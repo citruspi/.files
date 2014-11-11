@@ -53,7 +53,10 @@ set splitright
 
 set scrolloff=5                 " Start scrolling when five rows above the end
 set scrolljump=0
-                                    " Force myself to use the hjkl keys
+
+set wildmenu
+set wildmode=longest:full
+                                " Force myself to use the hjkl keys
 nnoremap <Left> :echoe "h"<CR>
 nnoremap <Right> :echoe "l"<CR>
 nnoremap <Up> :echoe "k"<CR>
