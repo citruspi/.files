@@ -54,6 +54,8 @@ set splitright
 set scrolloff=5                 " Start scrolling when five rows above the end
 set scrolljump=0
 
+set backspace=indent,eol,start  " Make backspace work list most other programs
+
 set wildmenu
 set wildmode=longest:full
                                 " Force myself to use the hjkl keys
