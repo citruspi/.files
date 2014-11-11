@@ -10,6 +10,9 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 mkdir ~/.vim/colors
 wget -O ~/.vim/colors/Tomorrow-Night-Eighties.vim https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night-Eighties.vim
 
+rm -rf ~/.zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.zsh/.ohmyzsh
+
 rm -f ~/.zshrc
 rm -f ~/.vimrc
 rm -f ~/.bashrc
