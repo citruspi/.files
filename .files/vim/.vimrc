@@ -6,6 +6,7 @@ call vundle#begin()
 
 Plugin 'gmarik/vundle'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end() 
 filetype plugin indent on
