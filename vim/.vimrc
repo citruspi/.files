@@ -71,6 +71,8 @@ set list listchars=tab:»·,trail:·,eol:¶
 set laststatus=2
 
 let g:airline_theme = 'solarized'
+set guifont=Meslo\ LG\ S\ for\ Powerline\ 10
+let g:airline_powerline_fonts = 1
 
 autocmd vimenter * if !argc() | NERDTree | endif " If there aren't any arguments automatically open NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " If NERDTree is the only buffer open, close vim
