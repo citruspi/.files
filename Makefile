@@ -1,3 +1,5 @@
+all: vim git tmux zsh misc
+
 vim:
 
 	rm -rf ~/.vim
