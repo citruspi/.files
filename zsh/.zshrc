@@ -33,7 +33,7 @@ fi
 # Aliases
 # ------------------------------
 
-alias buzzer='afplay ~/dotfiles/buzzer.mp3'
+alias buzzer='afplay ~/.buzzer.mp3'
 alias ..='cd ../'
 alias 'back=cd $OLDPWD'
 
