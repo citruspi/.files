@@ -1,4 +1,4 @@
-all: vim git tmux zsh misc
+all: vim git tmux zsh misc ssh
 
 vim:
 
@@ -46,4 +46,12 @@ misc:
 
 	cp misc/buzzer.mp3 ~/.buzzer.mp3
 
-.PHONY: vim git tmux zsh misc
+ssh:
+
+	mkdir -p ~/.ssh
+
+	rm -rf ~/.ssh/config
+
+	cp ssh/config ~/.ssh/config
+
+.PHONY: vim git tmux zsh misc ssh
