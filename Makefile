@@ -17,4 +17,12 @@ vim:
 
 	vim +PluginInstall +qall
 
-.PHONY: vim
+git:
+
+	rm -f ~/.gitconfig
+	rm -f ~/.gitignore
+
+	cp git/.gitconfig ~/.gitconfig
+	cp git/.gitignore ~/.gitignore
+
+.PHONY: vim git
