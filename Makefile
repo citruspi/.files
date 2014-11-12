@@ -31,4 +31,11 @@ tmux:
 
 	cp tmux/.tmux.conf ~/.tmux.conf
 
-.PHONY: vim git tmux
+zsh:
+
+	rm -f ~/.zshrc
+	
+	cp zsh/.zshrc ~/.zshrc
+	source ~/.zshrc
+
+.PHONY: vim git tmux zsh
