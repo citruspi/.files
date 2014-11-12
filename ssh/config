@@ -1,0 +1,15 @@
+Host nimbus
+    HostName 212.111.41.223
+    User nephelai 
+
+Host irc
+    HostName 85.159.211.28
+    User citruspi
+
+Host sereno
+    HostName sereno.citruspi.systems
+    User citruspi
+
+Host karaboudjan
+    HostName karaboudjan.citruspi.systems
+    User citruspi
