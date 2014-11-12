@@ -25,4 +25,10 @@ git:
 	cp git/.gitconfig ~/.gitconfig
 	cp git/.gitignore ~/.gitignore
 
-.PHONY: vim git
+tmux:
+
+	rm -f ~/.tmux.conf
+
+	cp tmux/.tmux.conf ~/.tmux.conf
+
+.PHONY: vim git tmux
