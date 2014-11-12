@@ -38,4 +38,10 @@ zsh:
 	cp zsh/.zshrc ~/.zshrc
 	source ~/.zshrc
 
-.PHONY: vim git tmux zsh
+misc:
+
+	rm -f ~/.buzzer.mp3
+
+	cp misc/buzzer.mp3 ~/.buzzer.mp3
+
+.PHONY: vim git tmux zsh misc
