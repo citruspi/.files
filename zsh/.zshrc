@@ -121,7 +121,7 @@ refresh() {
     cd $OLDPWD;
 }
 
-ex() {
+unpack() {
     if [[ -f $1 ]]; then
         case $1 in
             *.tar.bz2) tar xvjf $1;;
