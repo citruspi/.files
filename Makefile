@@ -1,4 +1,4 @@
-all: vim git tmux zsh misc ssh
+all: vim git tmux zsh misc ssh gem
 
 vim:
 
@@ -54,4 +54,10 @@ ssh:
 
 	cp ssh/config ~/.ssh/config
 
-.PHONY: vim git tmux zsh misc ssh
+gem:
+
+	rm -f ~/.gemrc
+
+	cp gem/.gemrc ~/.gemrc
+
+.PHONY: vim git tmux zsh misc ssh gem
