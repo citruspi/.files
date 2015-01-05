@@ -7,6 +7,7 @@ My personal dotfiles for
 - Git
 - Z Shell
 - SSH
+- Ruby Gem
 
 ## Usage
 
