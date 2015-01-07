@@ -22,5 +22,4 @@ Don't run the following commands on your computer without going through the dotf
 ### Update
 
     $ cd .files
-    $ git pull origin master
     $ make
