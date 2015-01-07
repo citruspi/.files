@@ -1,4 +1,8 @@
-all: vim git tmux zsh misc ssh gem
+all: update vim git tmux zsh misc ssh gem
+
+update:
+
+	@if git rev-parse --git-dir > /dev/null 2>&1; then git pull origin master; fi
 
 vim:
 
@@ -60,4 +64,4 @@ gem:
 
 	@cp gem/.gemrc ~/.gemrc
 
-.PHONY: vim git tmux zsh misc ssh gem
+.PHONY: update vim git tmux zsh misc ssh gem
