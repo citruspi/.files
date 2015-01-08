@@ -15,6 +15,7 @@ Plugin 'tpope/vim-fugitive'
 Bundle "scrooloose/nerdtree"
 Plugin 'kien/ctrlp.vim'
 Plugin 'fatih/vim-go'
+Plugin 'toyamarinyon/vim-swift'
 
 call vundle#end()
 filetype plugin indent on
