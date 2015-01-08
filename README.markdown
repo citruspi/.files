@@ -8,6 +8,7 @@ My personal dotfiles for
 - Z Shell
 - SSH
 - Ruby Gem
+- LFTP
 
 ## Usage
 
