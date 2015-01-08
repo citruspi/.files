@@ -1,4 +1,4 @@
-all: update vim git tmux zsh misc ssh gem
+all: update vim lftp git tmux zsh misc ssh gem
 
 update:
 
@@ -22,6 +22,12 @@ vim:
 	@wget -O ~/.vim/syntax/nginx.vim 'http://www.vim.org/scripts/download_script.php?src_id=19394'
 
 	@vim +PluginInstall +qall
+
+lftp:
+
+	@rm -f ~/.lftpc
+
+	@cp lftp/.lftprc ~/.lftprc
 
 git:
 
@@ -64,4 +70,4 @@ gem:
 
 	@cp gem/.gemrc ~/.gemrc
 
-.PHONY: update vim git tmux zsh misc ssh gem
+.PHONY: update vim lftp git tmux zsh misc ssh gem
