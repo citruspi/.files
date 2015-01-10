@@ -2,13 +2,13 @@
 
 My personal dotfiles for
 
-- Vim
-- Tmux
-- Git
-- Z Shell
-- SSH
-- Ruby Gem
-- LFTP
+- [Vim](http://vim.org)
+- [tmux](http://tmux.sourceforge.net)
+- [git](http://www.git-scm.com)
+- [Zsh](http://www.zsh.org)
+- [SSH](http://www.openssh.com)
+- [Ruby Gems](https://rubygems.org)
+- [LFTP](http://lftp.yar.ru)
 
 ## Usage
 
