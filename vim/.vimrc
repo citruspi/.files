@@ -16,6 +16,7 @@ Bundle "scrooloose/nerdtree"
 Plugin 'kien/ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'toyamarinyon/vim-swift'
+Plugin 'mustache/vim-mustache-handlebars'
 
 call vundle#end()
 filetype plugin indent on
