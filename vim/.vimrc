@@ -17,6 +17,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'toyamarinyon/vim-swift'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'tpope/vim-haml'
 
 call vundle#end()
 filetype plugin indent on
