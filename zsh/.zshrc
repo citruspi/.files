@@ -30,6 +30,14 @@ elif [[ $platform == 'linux' ]]; then
 fi
 
 # ------------------------------
+# Ruby Stuff
+# ------------------------------
+
+if [[ $platform == 'osx' ]]; then
+    export PATH=$PATH:$HOME/.gem/ruby/$(ls $HOME/.gem/ruby/ | tail -n 1)/bin
+fi
+
+# ------------------------------
 # Aliases
 # ------------------------------
 
