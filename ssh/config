@@ -5,3 +5,15 @@ Host sereno
 Host karaboudjan
     HostName karaboudjan.citruspi.systems
     User citruspi
+
+Host carreidas160
+    HostName carreidas160.citruspi.systems
+    User citruspi
+
+Host csh
+    HostName starfighter.csh.rit.edu
+    User citruspi
+
+Host yacht
+    HostName yacht.rit.edu
+    User citruspi
