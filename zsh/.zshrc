@@ -265,5 +265,5 @@ function current_pwd {
 #export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r$reset_color [(y)es (n)o (a)bort (e)dit]? "
 
 #RPROMPT=`$(virtualenv_info)`
-PROMPT="[%n@%m:%/] > "
-RPROMPT=`[ $VIRTUAL_ENV ] && echo '('\`basename $VIRTUAL_ENV\`')'`
+PROMPT="$ "
+#RPROMPT=`[ $VIRTUAL_ENV ] && echo '('\`basename $VIRTUAL_ENV\`')'`
