@@ -12,7 +12,7 @@ Host carreidas160
 
 Host csh
     HostName starfighter.csh.rit.edu
-    User citruspi
+    User mihir
 
 Host yacht
     HostName yacht.rit.edu
