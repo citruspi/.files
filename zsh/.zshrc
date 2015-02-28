@@ -102,9 +102,13 @@ export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 
 if [[ $platform == 'linux' ]]; then
-    source /usr/bin/virtualenvwrapper.sh
+     if [ -f "/usr/bin/virtualenvwrapper" ]; then
+        source /usr/bin/virtualenvwrapper.sh
+     fi
 elif [[ $platform == 'osx' ]]; then
-    source /usr/local/bin/virtualenvwrapper.sh
+    if [ -f "/usr/local/bin/virtualenvwrapper.sh" ]; then
+        source /usr/local/bin/virtualenvwrapper.sh
+    fi
 fi
 
 export TERM=xterm-256color
