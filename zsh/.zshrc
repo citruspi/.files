@@ -131,7 +131,7 @@ export LANG=en_US.UTF-8
 refresh() {
     cd /tmp;
     wget https://raw.githubusercontent.com/citruspi/.files/master/setup.sh;
-    bash setup.sh
+    make;
     cd $OLDPWD;
 }
 
