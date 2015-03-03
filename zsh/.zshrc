@@ -16,14 +16,6 @@ fi
 if [[ $platform == 'osx' ]]; then
     export GOROOT=$(brew --prefix)/Cellar/go/$(brew list go | head -n 1 | cut -d '/' -f 6)/libexec
     export GOPATH=$HOME/Code/.go
-
-    if [ -f "/usr/local/bin/go-virtualenv.sh" ]; then
-        source /usr/local/bin/go-virtualenv.sh
-
-        alias genv='go-mkvirtualenv'
-        alias gon='go-workon'
-        alias goff='go-deactivate'
-    fi
 elif [[ $platform == 'linux' ]]; then
     export GOROOT=/usr/lib/golang
     export GOPATH=$HOME/.go
