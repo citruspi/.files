@@ -45,10 +45,6 @@ elif [[ $platform == 'osx' ]]; then
     alias ls='ls -GFh'
 fi
 
-alias mkenv='mkvirtualenv'
-alias on="workon"
-alias off="deactivate"
-
 # ------------------------------
 # Key Bindings
 # ------------------------------
