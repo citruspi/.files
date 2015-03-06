@@ -21,6 +21,8 @@ elif [[ $platform == 'linux' ]]; then
     export GOPATH=$HOME/.go
 fi
 
+export PATH=$PATH:$GOPATH/bin
+
 # ------------------------------
 # Ruby Stuff
 # ------------------------------
@@ -166,7 +168,6 @@ function loc() {
     echo "${fg[blue]}Total${reset_color} lines of code: ${fg[green]}$total${reset_color}"
 }
 
-export PATH=$PATH:$GOPATH/bin
 
 path() {
     echo $PATH | tr ":" "\n" | \
