@@ -24,6 +24,24 @@ fi
 export PATH=$PATH:$GOPATH/bin
 
 # ------------------------------
+# Python Stuff
+# ------------------------------
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
+
+if [[ $platform == 'linux' ]]; then
+     if [ -f "/usr/bin/virtualenvwrapper" ]; then
+        source /usr/bin/virtualenvwrapper.sh
+     fi
+elif [[ $platform == 'osx' ]]; then
+    if [ -f "/usr/local/bin/virtualenvwrapper.sh" ]; then
+        source /usr/local/bin/virtualenvwrapper.sh
+    fi
+fi
+
+# ------------------------------
 # Ruby Stuff
 # ------------------------------
 
@@ -85,21 +103,6 @@ fi
 # ------------------------------
 # Exports
 # ------------------------------
-
-#Virtualenv Wrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_RESPECT_VIRTUALENV=true
-
-if [[ $platform == 'linux' ]]; then
-     if [ -f "/usr/bin/virtualenvwrapper" ]; then
-        source /usr/bin/virtualenvwrapper.sh
-     fi
-elif [[ $platform == 'osx' ]]; then
-    if [ -f "/usr/local/bin/virtualenvwrapper.sh" ]; then
-        source /usr/local/bin/virtualenvwrapper.sh
-    fi
-fi
 
 export TERM=xterm-256color
 export CLICOLOR=1
