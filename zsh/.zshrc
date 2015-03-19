@@ -21,6 +21,26 @@ elif [[ $platform == 'linux' ]]; then
     export GOPATH=$HOME/.go
 fi
 
+export PATH=$PATH:$GOPATH/bin
+
+# ------------------------------
+# Python Stuff
+# ------------------------------
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
+
+if [[ $platform == 'linux' ]]; then
+     if [ -f "/usr/bin/virtualenvwrapper" ]; then
+        source /usr/bin/virtualenvwrapper.sh
+     fi
+elif [[ $platform == 'osx' ]]; then
+    if [ -f "/usr/local/bin/virtualenvwrapper.sh" ]; then
+        source /usr/local/bin/virtualenvwrapper.sh
+    fi
+fi
+
 # ------------------------------
 # Ruby Stuff
 # ------------------------------
@@ -44,10 +64,6 @@ if [[ $platform == 'linux' ]]; then
 elif [[ $platform == 'osx' ]]; then
     alias ls='ls -GFh'
 fi
-
-alias mkenv='mkvirtualenv'
-alias on="workon"
-alias off="deactivate"
 
 # ------------------------------
 # Key Bindings
@@ -88,17 +104,6 @@ fi
 # Exports
 # ------------------------------
 
-#Virtualenv Wrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_RESPECT_VIRTUALENV=true
-
-if [[ $platform == 'linux' ]]; then
-    source /usr/bin/virtualenvwrapper.sh
-elif [[ $platform == 'osx' ]]; then
-    source /usr/local/bin/virtualenvwrapper.sh
-fi
-
 export TERM=xterm-256color
 export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
@@ -119,7 +124,7 @@ export LANG=en_US.UTF-8
 refresh() {
     cd /tmp;
     wget https://raw.githubusercontent.com/citruspi/.files/master/setup.sh;
-    bash setup.sh
+    make;
     cd $OLDPWD;
 }
 
@@ -146,27 +151,6 @@ unpack() {
         echo "'$1' is not a valid file"
     fi
 }
-
-function loc() {
-    local total
-    local firstletter
-    local ext
-    local lines
-    total=0
-    for ext in $@; do   
-        firstletter=$(echo $ext | cut -c1-1)
-        if [[ firstletter != "." ]]; then
-            ext=".$ext"
-        fi
-        lines=`find-exec "*$ext" cat | wc -l`
-        lines=${lines// /}
-        total=$(($total + $lines))
-        echo "Lines of code for ${fg[blue]}$ext${reset_color}: ${fg[green]}$lines${reset_color}"
-    done
-    echo "${fg[blue]}Total${reset_color} lines of code: ${fg[green]}$total${reset_color}"
-}
-
-export PATH=$PATH:$GOPATH/bin
 
 path() {
     echo $PATH | tr ":" "\n" | \
