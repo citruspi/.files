@@ -24,6 +24,19 @@ fi
 export PATH=$PATH:$GOPATH/bin
 
 # ------------------------------
+# PostgreSQL stuff
+# ------------------------------
+
+if [[ $platform == 'osx' ]]; then
+    plist='/usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist'
+
+    alias 'start-postgres'='launchctl load $plist'
+    alias 'stop-postgres'='launchctl unload $plist'
+
+    export PATH=$PATH:$(brew --prefix)/Cellar/postgresql/$(brew list postgresql | head -n 1 | cut -d '/' -f 6)/bin
+fi
+
+# ------------------------------
 # Python Stuff
 # ------------------------------
 
