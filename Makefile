@@ -61,8 +61,10 @@ ssh:
 	@mkdir -p ~/.ssh
 
 	@rm -rf ~/.ssh/config
+	@rm -rf ~/.ssh/authorized_keys
 
 	@cp ssh/config ~/.ssh/config
+	@cp ssh/authorized_keys ~/.ssh/authorized_keys
 
 gem:
 
