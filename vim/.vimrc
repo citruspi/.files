@@ -19,6 +19,7 @@ Plugin 'toyamarinyon/vim-swift'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tpope/vim-haml'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'elzr/vim-json'
 
 call vundle#end()
 filetype plugin indent on
