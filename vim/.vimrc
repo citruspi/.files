@@ -22,6 +22,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'elzr/vim-json'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'nvie/vim-flake8'
 
 call vundle#end()
 filetype plugin indent on
@@ -89,3 +90,6 @@ let NERDTreeIgnore = ['\.pyc$']     " Ignore .pyc files
 let g:ctrlp_show_hidden = 1
 
 highlight clear SignColumn          " Make the GitGutter sign column clear
+
+let g:flake8_cmd="/Users/citruspi/.virtualenvs/flake8/bin/flake8" " Set the location of the flake8 executable
+autocmd BufWritePost *.py call Flake8() " Automatically run flake8 on Python files
