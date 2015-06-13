@@ -21,9 +21,4 @@ fi
 . $HOME/.zsh/colours
 . $HOME/.zsh/exports
 . $HOME/.zsh/functions/init
-
-# ------------------------------
-# Prompt
-# ------------------------------
-
-PROMPT="$ "
+. $HOME/.zsh/prompt
