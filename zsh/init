@@ -7,8 +7,10 @@ if [[ "$unamestr" == 'Linux' ]]; then
     platform='linux'
 elif [[ "$unamestr" == 'Darwin' ]]; then
     platform='osx'
+elif [[ "$unamestr" == 'MINGW64_NT-6.1' ]]; then
+    echo 'Fuck this shit'
+    exit 1
 fi
-
 
 . $HOME/.zsh/go
 . $HOME/.zsh/postgresql
