@@ -1,5 +1,5 @@
-# Checks
-
+#!/usr/local/bin/zsh
+#
 platform='unknown'
 unamestr=$(uname)
 
