@@ -19,25 +19,7 @@ fi
 . $HOME/.zsh/aliases
 . $HOME/.zsh/key-bindings
 . $HOME/.zsh/colours
-
-# ------------------------------
-# Exports
-# ------------------------------
-
-export EDITOR=vim
-
-export TERM=xterm-256color
-export CLICOLOR=1
-export LSCOLORS=Gxfxcxdxbxegedabagacad
-
-export GREP_OPTIONS='--color=auto'
-export GREP_COLOR='3;33'
-
-export ARCHFLAGS='-arch x86_64'
-
-export LC_ALL=en_US.UTF-8
-export LC_CTYPE=en_US.UTF-8
-export LANG=en_US.UTF-8
+. $HOME/.zsh/exports
 
 # ------------------------------
 # Functions 
