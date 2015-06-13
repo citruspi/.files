@@ -17,14 +17,7 @@ fi
 . $HOME/.zsh/chef
 
 . $HOME/.zsh/aliases
-
-# ------------------------------
-# Key Bindings
-# ------------------------------
-
-bindkey "^K"      kill-whole-line
-bindkey "^A"      beginning-of-line
-bindkey "^E"      end-of-line
+. $HOME/.zsh/key-bindings
 
 # ------------------------------
 # Colors

@@ -1,0 +1,5 @@
+#!/usr/local/bin/zsh
+
+bindkey "^K"      kill-whole-line
+bindkey "^A"      beginning-of-line
+bindkey "^E"      end-of-line
