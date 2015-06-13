@@ -1,0 +1,10 @@
+#!/usr/local/bin/zsh
+
+alias ..='cd ../'
+alias 'back=cd $OLDPWD'
+
+if [[ $platform == 'linux' ]]; then
+    alias ls='ls -GFh --color'
+elif [[ $platform == 'osx' ]]; then
+    alias ls='ls -GFh'
+fi

@@ -16,18 +16,7 @@ fi
 . $HOME/.zsh/ruby
 . $HOME/.zsh/chef
 
-# ------------------------------
-# Aliases
-# ------------------------------
-
-alias ..='cd ../'
-alias 'back=cd $OLDPWD'
-
-if [[ $platform == 'linux' ]]; then
-    alias ls='ls -GFh --color'
-elif [[ $platform == 'osx' ]]; then
-    alias ls='ls -GFh'
-fi
+. $HOME/.zsh/aliases
 
 # ------------------------------
 # Key Bindings
