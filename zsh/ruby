@@ -2,7 +2,9 @@
 
 if [[ $platform == 'osx' ]]; then
     if [[ -d "$HOME/.gem/" ]]; then
-        export PATH=$PATH:$HOME/.gem/ruby/$(ls $HOME/.gem/ruby/ | tail -n 1)/bin
+        RUBY_VERSION=$(ls $HOME/.gem/ruby/ | tail -n 1)
+
+        export PATH=$PATH:$HOME/.gem/ruby/$RUBY_VERSION/bin
     fi
 fi
 

@@ -1,7 +1,9 @@
 #!/usr/local/bin/zsh
 
 if [[ $platform == 'osx' ]]; then
-    export GOROOT=$(brew --prefix)/Cellar/go/$(brew list go | head -n 1 | cut -d '/' -f 6)/libexec
+    GO_VERSION=$(brew list go | head -n 1 | cut -d '/' -f 6)
+
+    export GOROOT=$(brew --prefix)/Cellar/go/$GO_VERSION/libexec
     export GOPATH=$HOME/Code/.go
 elif [[ $platform == 'linux' ]]; then
     export GOROOT=/usr/lib/golang

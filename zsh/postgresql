@@ -6,6 +6,8 @@ if [[ $platform == 'osx' ]]; then
     alias 'start-postgres'='launchctl load $plist'
     alias 'stop-postgres'='launchctl unload $plist'
 
-    export PATH=$PATH:$(brew --prefix)/Cellar/postgresql/$(brew list postgresql | head -n 1 | cut -d '/' -f 6)/bin
+    POSTGRESQL_VERSION=$(brew list postgresql | head -n 1 | cut -d '/' -f 6)
+
+    export PATH=$PATH:$(brew --prefix)/Cellar/postgresql/$POSTGRESQL_VERSION/bin
 fi
 
