@@ -49,7 +49,7 @@ zsh:
 	@rm -rf ~/.zsh
 
 	@cp -r zsh ~/.zsh
-	@ln -s ~/.zsh/.zshrc ~/.zshrc
+	@ln -s ~/.zsh/init ~/.zshrc
 	@source ~/.zshrc
 
 ssh:
