@@ -45,9 +45,11 @@ tmux:
 
 zsh:
 
-	@rm -f ~/.zshrc
-	
-	@cp zsh/.zshrc ~/.zshrc
+	@rm ~/.zshrc
+	@rm -rf ~/.zsh
+
+	@cp -r zsh ~/.zsh
+	@ln -s ~/.zsh/.zshrc ~/.zshrc
 	@source ~/.zshrc
 
 ssh:

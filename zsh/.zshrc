@@ -9,19 +9,8 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
     platform='osx'
 fi
 
-# ------------------------------
-# Go Stuff
-# ------------------------------
 
-if [[ $platform == 'osx' ]]; then
-    export GOROOT=$(brew --prefix)/Cellar/go/$(brew list go | head -n 1 | cut -d '/' -f 6)/libexec
-    export GOPATH=$HOME/Code/.go
-elif [[ $platform == 'linux' ]]; then
-    export GOROOT=/usr/lib/golang
-    export GOPATH=$HOME/.go
-fi
-
-export PATH=$PATH:$GOPATH/bin
+. $HOME/.zsh/go
 
 # ------------------------------
 # PostgreSQL stuff
