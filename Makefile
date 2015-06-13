@@ -60,7 +60,9 @@ ssh:
 	@rm -rf ~/.ssh/authorized_keys
 
 	@cp ssh/config ~/.ssh/config
-	@cp ssh/authorized_keys ~/.ssh/authorized_keys
+	@touch ~/.ssh/authorized_keys
+
+	@for key in ssh/authorized_keys/*; do cat $$key >> ~/.ssh/authorized_keys; done
 
 gem:
 
