@@ -1,0 +1,5 @@
+#!/usr/local/bin/zsh
+
+if [[ -d "/opt/chefdk" ]]; then
+    export PATH=$PATH:/opt/chefdk/bin
+fi

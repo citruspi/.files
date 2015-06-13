@@ -14,14 +14,7 @@ fi
 . $HOME/.zsh/postgresql
 . $HOME/.zsh/python
 . $HOME/.zsh/ruby
-
-# ------------------------------
-# Chef Stuff
-# ------------------------------
-
-if [[ -d "/opt/chefdk" ]]; then
-    export PATH=$PATH:/opt/chefdk/bin
-fi
+. $HOME/.zsh/chef
 
 # ------------------------------
 # Aliases
