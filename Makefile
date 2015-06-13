@@ -19,7 +19,7 @@ vim:
 
 	@cp vim/filetype.vim ~/.vim/filetype.vim
 
-	@wget -O ~/.vim/syntax/nginx.vim 'http://www.vim.org/scripts/download_script.php?src_id=19394'
+	@curl -o ~/.vim/syntax/nginx.vim 'http://www.vim.org/scripts/download_script.php?src_id=19394'
 
 	@vim +PluginInstall +qall
 
