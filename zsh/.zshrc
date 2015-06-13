@@ -13,16 +13,7 @@ fi
 . $HOME/.zsh/go
 . $HOME/.zsh/postgresql
 . $HOME/.zsh/python
-
-# ------------------------------
-# Ruby Stuff
-# ------------------------------
-
-if [[ $platform == 'osx' ]]; then
-    if [[ -d "$HOME/.gem/" ]]; then
-        export PATH=$PATH:$HOME/.gem/ruby/$(ls $HOME/.gem/ruby/ | tail -n 1)/bin
-    fi
-fi
+. $HOME/.zsh/ruby
 
 # ------------------------------
 # Chef Stuff
