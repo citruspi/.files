@@ -1,0 +1,9 @@
+#!/usr/local/bin/zsh
+
+refresh() {
+    cd /tmp;
+    wget https://raw.githubusercontent.com/citruspi/.files/master/setup.sh;
+    make;
+    cd $OLDPWD;
+}
+
