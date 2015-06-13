@@ -65,6 +65,14 @@ if [[ $platform == 'osx' ]]; then
 fi
 
 # ------------------------------
+# Chef Stuff
+# ------------------------------
+
+if [[ -d "/opt/chefdk" ]]; then
+    export PATH=$PATH:/opt/chefdk/bin
+fi
+
+# ------------------------------
 # Aliases
 # ------------------------------
 
