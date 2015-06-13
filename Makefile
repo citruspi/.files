@@ -1,4 +1,4 @@
-all: update vim lftp git tmux zsh misc ssh gem
+all: update vim lftp git tmux zsh ssh gem
 
 update:
 
@@ -50,12 +50,6 @@ zsh:
 	@cp zsh/.zshrc ~/.zshrc
 	@source ~/.zshrc
 
-misc:
-
-	@rm -f ~/.buzzer.mp3
-
-	@cp misc/buzzer.mp3 ~/.buzzer.mp3
-
 ssh:
 
 	@mkdir -p ~/.ssh
@@ -72,4 +66,4 @@ gem:
 
 	@cp gem/.gemrc ~/.gemrc
 
-.PHONY: update vim lftp git tmux zsh misc ssh gem
+.PHONY: update vim lftp git tmux zsh ssh gem
