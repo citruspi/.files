@@ -45,7 +45,7 @@ tmux:
 
 zsh:
 
-	rm ~/.zshrc
+	rm -f ~/.zshrc
 	rm -rf ~/.zsh
 
 	cp -r zsh ~/.zsh
