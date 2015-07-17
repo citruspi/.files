@@ -7,5 +7,7 @@ cat() {
         else
             echo "cat: $1: No such file or directory"
         fi
+    else
+        cat $1
     fi
 }
