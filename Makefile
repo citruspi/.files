@@ -64,6 +64,8 @@ ssh:
 
 	for key in ssh/authorized_keys/*; do cat $$key >> ~/.ssh/authorized_keys; done
 
+	chmod -R 700 ~/.ssh
+
 gem:
 
 	rm -f ~/.gemrc
