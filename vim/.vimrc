@@ -23,6 +23,7 @@ Plugin 'elzr/vim-json'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'nvie/vim-flake8'
+Plugin 'Glench/Vim-Jinja2-Syntax'
 
 call vundle#end()
 filetype plugin indent on
