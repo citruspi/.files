@@ -45,7 +45,7 @@ tmux:
 
 zsh:
 
-	rm ~/.zshrc
+	rm -f ~/.zshrc
 	rm -rf ~/.zsh
 
 	cp -r zsh ~/.zsh
@@ -63,6 +63,8 @@ ssh:
 	touch ~/.ssh/authorized_keys
 
 	for key in ssh/authorized_keys/*; do cat $$key >> ~/.ssh/authorized_keys; done
+
+	chmod -R 700 ~/.ssh
 
 gem:
 
