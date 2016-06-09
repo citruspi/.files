@@ -12,6 +12,8 @@ elif [[ "$unamestr" == 'MINGW64_NT-6.1' ]]; then
     exit 1
 fi
 
+. $HOME/.zsh/exports
+
 . $HOME/.zsh/go
 . $HOME/.zsh/postgresql
 . $HOME/.zsh/python
@@ -21,6 +23,5 @@ fi
 . $HOME/.zsh/aliases
 . $HOME/.zsh/key-bindings
 . $HOME/.zsh/colours
-. $HOME/.zsh/exports
 . $HOME/.zsh/functions/init
 . $HOME/.zsh/prompt
