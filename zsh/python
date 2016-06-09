@@ -4,6 +4,10 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 
+if [ -f "/usr/local/opt/python/bin/python2.7" ]; then
+    export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python/bin/python2.7
+fi
+
 if [[ $platform == 'linux' ]]; then
      if [ -f "/usr/bin/virtualenvwrapper" ]; then
         source /usr/bin/virtualenvwrapper.sh
