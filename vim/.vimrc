@@ -93,5 +93,22 @@ let g:ctrlp_show_hidden = 1
 
 highlight clear SignColumn          " Make the GitGutter sign column clear
 
-let g:flake8_cmd="/Users/citruspi/.virtualenvs/flake8/bin/flake8" " Set the location of the flake8 executable
+" Set the location of the flake8 executable
+if has("unix")
+    let s:uname = system("uname -s")
+    if s:uname == "Darwin\n"
+        if filereadable("/Users/citruspi/.virtualenvs/flake8/bin/flake8")
+            let g:flake8_cmd="/Users/citruspi/.virtualenvs/flake8/bin/flake8"
+        elseif filereadable("/Users/citruspi/.pyvenvs/pycqa-flake8/bin/flake8")
+            let g:flake8_cmd="/Users/citruspi/.pyvenvs/pycqa-flake8/bin/flake8"
+        endif
+    else
+        if filereadable("/home/citruspi/.virtualenvs/flake8/bin/flake8")
+            let g:flake8_cmd="/home/citruspi/.virtualenvs/flake8/bin/flake8"
+        elseif filereadable("/home/citruspi/.pyvenvs/pycqa-flake8/bin/flake8")
+            let g:flake8_cmd="/home/citruspi/.pyvenvs/pycqa-flake8/bin/flake8"
+        endif
+    endif
+endif
+
 autocmd BufWritePost *.py call Flake8() " Automatically run flake8 on Python files
