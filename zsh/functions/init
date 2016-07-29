@@ -1,3 +1,3 @@
 . $HOME/.zsh/functions/unpack
 . $HOME/.zsh/functions/path
-. $HOME/.zsh/functions/cat
+. $HOME/.zsh/functions/timestamp
