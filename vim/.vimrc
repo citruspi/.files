@@ -25,7 +25,6 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'nvie/vim-flake8'
 Plugin 'Glench/Vim-Jinja2-Syntax'
-Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 filetype plugin indent on
