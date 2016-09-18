@@ -3,3 +3,7 @@
 if [[ -d "/opt/chefdk" ]]; then
     export PATH=$PATH:/opt/chefdk/bin
 fi
+
+if [[ -d "$HOME/.chefvm" ]]; then
+    export PATH=$PATH:$HOME/.chefvm/bin
+fi
